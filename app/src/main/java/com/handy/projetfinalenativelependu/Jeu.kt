@@ -44,6 +44,8 @@ class Jeu ( private val jeu : Array<String>) {
         return motTentative == motÀDeviner
     }
 
+
+
 }
 
 

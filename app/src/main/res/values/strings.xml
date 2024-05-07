@@ -1,4 +1,15 @@
 <resources>
+    <!--    Test de navigation-->
     <string name="app_name">ProjetFinaleNativeLePendu</string>
     <string name="app_main_title">Jeu du Pendu</string>
+
+    <!--    Les boutons de démarrage-->
+    <string name="tbn_start">Commencer à joué</string>
+    <string name="btn_settings">Préférences</string>
+    <string name="btn_story">Historique de jeu</string>
+    <string name="btn_quit">Quitter le jeu</string>
+
+    <!--    -->
+    <string name="btn_restart">Recommencer</string>
+
 </resources>

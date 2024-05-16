@@ -13,10 +13,16 @@
         android:theme="@style/Theme.ProjetFinaleNativeLePendu"
         tools:targetApi="31">
         <activity
-            android:name=".JeuPendu"
+            android:name=".DictionaryView"
             android:exported="false" />
         <activity
-            android:name=".Accueil2"
+            android:name=".HistoriqueItem"
+            android:exported="false" />
+        <activity
+            android:name=".HistoriqueView"
+            android:exported="false" />
+        <activity
+            android:name=".JeuPendu"
             android:exported="false" />
         <activity
             android:name=".Accueil"

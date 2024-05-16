@@ -4,12 +4,55 @@
     <string name="app_main_title">Jeu du Pendu</string>
 
     <!--    Les boutons de démarrage-->
-    <string name="tbn_start">Commencer à joué</string>
+    <string name="tbn_start">Commencer à jouer</string>
     <string name="btn_settings">Préférences</string>
-    <string name="btn_story">Historique de jeu</string>
+    <string name="btn_history">Historique de jeu</string>
+
+    <!-- Les boutons de contrôles(fin de jeu)   -->
+    <string name="btn_restart">Rejouer</string>
     <string name="btn_quit">Quitter le jeu</string>
 
-    <!--    -->
-    <string name="btn_restart">Recommencer</string>
+    <!-- Les boutons de préférences   -->
+    <string name="btn_langue">Langue</string>
+    <string name="btn_difficulty">Difficulté</string>
+    <string name="btn_defaultSettings">Paramètres par défaut</string>
+
+    <!-- Les label préférences -->
+    <string name="label_niveau">Difficulté</string>
+    <string name="label_facile">Facile</string>
+    <string name="label_moyen">Moyen</string>
+    <string name="label_difficile">Difficile</string>
+    <string name="label_langue">Langue</string>
+    <string name="label_fr">Français</string>
+    <string name="label_en">Anglais</string>
+    <string name="btn_save">Sauvegarder</string>
+
+    <!-- Étant facultatif je n'ai rien mis pour le moment,on s'en reparle -->
+    <string name="label_motJouer">Mot joué : </string>
+    <string name="label_Lev_difficulte">Difficulté de la partie : </string>
+    <string name="label_tempsDeJeux">Temps de Jeu : </string>
+    <string name="label_tentative">Nombres de tentatives : </string>
+    <string name="label_resultat">Redultat de la partie : </string>
+
+
+    <!-- Les messages d'affichage (fin de jeux)  -->
+    <string name="textview_messageDéfaite">Vous avez perdu - Le mot était :</string>
+    <string name="textview_messageVictoire">Vous avez gagné!</string>
+
+    <!-- Les messages d'affichage (pendant le jeu)  -->
+    <string name="textview_messageScore">Score</string>
+    <string name="textview_messageConsigne">Trouver ce mot</string>
+
+<!--    Dictionary part -->
+    <string name="home_page">Retour</string>
+    <string name="dic_title">Dictionnaire</string>
+    <string name="del_tbn">Supprimer</string>
+    <string name="add_tbn">Ajouter</string>
+
+    <string-array name="list_diff">
+        <item>Facile</item>
+        <item>Moyen</item>
+        <item>Difficile</item>
+    </string-array>
 
 </resources>

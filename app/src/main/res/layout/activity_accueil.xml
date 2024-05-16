@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:gravity="center|center_horizontal"
     android:orientation="vertical"
-    tools:context=".Accueil2">
+    tools:context=".Accueil">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,10 +54,10 @@
                     android:id="@+id/button3"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/btn_story" />
+                    android:text="@string/btn_history" />
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/btn_quit"
                     android:layout_width="200dp"
                     android:layout_height="50dp"
                     android:text="@string/btn_quit" />

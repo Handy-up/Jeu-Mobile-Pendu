@@ -27,8 +27,9 @@ class Jeu ( private val jeu : Array<String>) {
 
     fun essayerUneLettre(lettre: Char): ArrayList<Int> {
         val indices = ArrayList<Int>()
-        motÀDeviner.forEachIndexed { index, char ->
-            if (char == lettre) {
+        var motVerifier = this.motÀDeviner
+        motVerifier.forEachIndexed { index, char ->
+            if (char == lettre ) {
                 indices.add(index)
             }
         }
@@ -37,11 +38,18 @@ class Jeu ( private val jeu : Array<String>) {
         } else {
             pointage += indices.size
         }
+
+        // Supprimer le caractère de motVerifier
+        val indicesToRemove = indices.reversed() // On inverse les indices pour éviter les décalages lors de la suppression
+        indicesToRemove.forEach { index ->
+            motVerifier = motVerifier.removeRange(index, index + 1)
+        }
+
         return indices
     }
 
-    fun estRéussie(motTentative: String) : Boolean{
-        return motTentative == motÀDeviner
+    fun estReussie() : Boolean{
+        return motÀDeviner.count() == pointage
     }
 
 

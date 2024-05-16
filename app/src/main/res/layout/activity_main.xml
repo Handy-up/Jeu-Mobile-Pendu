@@ -101,6 +101,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showA"
             android:text="A" />
 
         <Button
@@ -110,6 +111,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showB"
             android:text="B" />
 
         <Button
@@ -119,6 +121,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showC"
             android:text="C" />
 
         <Button
@@ -128,6 +131,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showD"
             android:text="D" />
 
         <Button
@@ -137,6 +141,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showE"
             android:text="E" />
 
         <Button
@@ -146,6 +151,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showF"
             android:text="F" />
 
         <Button
@@ -155,6 +161,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showG"
             android:text="G" />
 
         <Button
@@ -164,6 +171,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showH"
             android:text="H" />
 
         <Button
@@ -173,6 +181,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showI"
             android:text="I" />
 
         <Button
@@ -182,6 +191,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showJ"
             android:text="J" />
 
         <Button
@@ -191,6 +201,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showK"
             android:text="K" />
 
         <Button
@@ -200,6 +211,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showL"
             android:text="L" />
 
         <Button
@@ -209,6 +221,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showM"
             android:text="M" />
 
         <Button
@@ -218,6 +231,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showN"
             android:text="N" />
 
         <Button
@@ -227,6 +241,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showO"
             android:text="O" />
 
         <Button
@@ -236,6 +251,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showP"
             android:text="P" />
 
         <Button
@@ -245,6 +261,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showQ"
             android:text="Q" />
 
         <Button
@@ -254,6 +271,7 @@
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
             android:background="@color/title_color"
+            android:onClick="showR"
             android:text="R" />
 
         <Button

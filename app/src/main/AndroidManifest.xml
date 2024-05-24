@@ -13,6 +13,19 @@
         android:theme="@style/Theme.ProjetFinaleNativeLePendu"
         tools:targetApi="31">
         <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false"
+            android:label="Ajouter un mot" />
+        <activity
+            android:name=".SettingsView"
+            android:exported="false" />
+        <activity
+            android:name=".ResultView"
+            android:exported="false" />
+        <activity
             android:name=".DictionaryView"
             android:exported="false" />
         <activity

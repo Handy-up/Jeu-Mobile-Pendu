@@ -1,23 +1,26 @@
 <resources>
-    <!--    Test de navigation-->
+    <!-- Test de navigation -->
     <string name="app_name">ProjetFinaleNativeLePendu</string>
     <string name="app_main_title">Jeu du Pendu</string>
 
-    <!--    Les boutons de démarrage-->
+    <!-- Layout Accueil -->
+    <!-- Les boutons de contrôles -->
     <string name="tbn_start">Commencer à jouer</string>
     <string name="btn_settings">Préférences</string>
     <string name="btn_history">Historique de jeu</string>
-
-    <!-- Les boutons de contrôles(fin de jeu)   -->
-    <string name="btn_restart">Rejouer</string>
     <string name="btn_quit">Quitter le jeu</string>
+    <!-- Dev Tag -->
+    <string name="devLabel">Dave | Handy-App</string>
 
-    <!-- Les boutons de préférences   -->
+    <!-- Les boutons de contrôles (fin de jeu) -->
+    <string name="btn_restart">Rejouer</string>
+
+    <!-- Les boutons de préférences -->
     <string name="btn_langue">Langue</string>
     <string name="btn_difficulty">Difficulté</string>
     <string name="btn_defaultSettings">Paramètres par défaut</string>
 
-    <!-- Les label préférences -->
+    <!-- Les labels de préférences -->
     <string name="label_niveau">Difficulté</string>
     <string name="label_facile">Facile</string>
     <string name="label_moyen">Moyen</string>
@@ -27,32 +30,46 @@
     <string name="label_en">Anglais</string>
     <string name="btn_save">Sauvegarder</string>
 
-    <!-- Étant facultatif je n'ai rien mis pour le moment,on s'en reparle -->
-    <string name="label_motJouer">Mot joué : </string>
-    <string name="label_Lev_difficulte">Difficulté de la partie : </string>
-    <string name="label_tempsDeJeux">Temps de Jeu : </string>
-    <string name="label_tentative">Nombres de tentatives : </string>
-    <string name="label_resultat">Redultat de la partie : </string>
+    <!-- Dictionnaire Layout -->
+    <string name="textView_MessageSuppression">Indiquer le numéro du mot que vous souhaitez supprimer</string>
+    <string name="btn_supprimerMot">Supprimer</string>
+    <string name="hint_suppression">Indiquer le numéro du mot que vous souhaitez supprimer</string>
 
+    <!-- Ajouter Mot Layout -->
+    <string name="hint_motFrancais">Mot en français</string>
+    <string name="hint_motAnglais">Mot en anglais</string>
+    <string name="radioBtnFacile">Facile</string>
+    <string name="radioBtnMoyen">Moyen</string>
+    <string name="radioBtnDifficile">Difficile</string>
+    <string name = "btnAjouterMot">Ajouter</string>
 
-    <!-- Les messages d'affichage (fin de jeux)  -->
+    <!--Historique Layout-->
+    <string name="label_motJouer">Mot joué :</string>
+    <string name="label_Lev_difficulte">Difficulté de la partie :</string>
+    <string name="label_tempsDeJeux">Temps de Jeu :</string>
+    <string name="label_tentative">Nombres de tentatives :</string>
+    <string name="label_resultat">Résultat de la partie :</string>
+
+    <!-- Les messages d'affichage (fin de jeux) -->
     <string name="textview_messageDéfaite">Vous avez perdu - Le mot était :</string>
-    <string name="textview_messageVictoire">Vous avez gagné!</string>
+    <string name="textview_messageVictoire">Vous avez gagné !</string>
 
-    <!-- Les messages d'affichage (pendant le jeu)  -->
+    <!-- Les messages d'affichage (pendant le jeu) -->
     <string name="textview_messageScore">Score</string>
     <string name="textview_messageConsigne">Trouver ce mot</string>
 
-<!--    Dictionary part -->
+    <!-- Dictionary part -->
     <string name="home_page">Retour</string>
     <string name="dic_title">Dictionnaire</string>
     <string name="del_tbn">Supprimer</string>
     <string name="add_tbn">Ajouter</string>
+    <string name="placeholder_fr">Mot en français</string>
+    <string name="placeholder_en">Mot en anglais</string>
+    <string name="placeholder_id">id</string>
 
     <string-array name="list_diff">
         <item>Facile</item>
         <item>Moyen</item>
         <item>Difficile</item>
     </string-array>
-
 </resources>

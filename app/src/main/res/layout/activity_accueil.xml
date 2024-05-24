@@ -20,16 +20,31 @@
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:text="TextView" />
+                android:layout_height="65dp"
+                android:background="@color/btn_quite"
+                android:gravity="bottom|right"
+                android:orientation="vertical"
+                android:paddingRight="45dp"
+                android:paddingBottom="17dp">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/devLabel"
+                    android:textColor="@color/white"
+                    android:visibility="visible"
+                    tools:text="@string/devLabel" />
+
+            </LinearLayout>
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="390dp"
                 android:layout_height="395dp"
+                android:padding="12dp"
                 app:srcCompat="@drawable/acceuil" />
 
             <LinearLayout
@@ -39,27 +54,27 @@
                 android:orientation="vertical">
 
                 <Button
-                    android:id="@+id/btnStart"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:onClick="startGame"
                     android:text="@string/tbn_start" />
 
                 <Button
-                    android:id="@+id/button2"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:onClick="goPreferences"
                     android:text="@string/btn_settings" />
 
                 <Button
-                    android:id="@+id/button3"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:onClick="showStory"
                     android:text="@string/btn_history" />
 
                 <Button
-                    android:id="@+id/btn_quit"
                     android:layout_width="200dp"
                     android:layout_height="50dp"
+                    android:onClick="quiteGame"
                     android:text="@string/btn_quit" />
             </LinearLayout>
         </LinearLayout>

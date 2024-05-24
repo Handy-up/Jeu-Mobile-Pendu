@@ -7,4 +7,11 @@
     <color name="color_text_find_word">#008588</color>
     <color name="color_text_result">#A90015</color>
 
+<!--    Color for buttons-->
+    <color name="btn_edit">#0339A6</color>
+    <color name="btn_add">#38A605</color>
+    <color name="btn_delete">#BF0404</color>
+    <color name="btn_update">#05AFF2</color>
+    <color name="btn_quite">#120F26</color>
+
 </resources>

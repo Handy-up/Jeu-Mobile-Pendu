@@ -8,29 +8,26 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class HistoriqueAdapter(
-    ctx : Activity,
-    private val data: ArrayList<Histirique>,
-    private var checkBoxState: BooleanArray
+    private val data: ArrayList<Historique>,
 ) : RecyclerView.Adapter<HistoriqueAdapter.HistoriqueContent>() {
 
     inner class HistoriqueContent(itemView: View) : RecyclerView.ViewHolder(itemView) {
          var motJouer: TextView
          var difficulte: TextView
          var tempsDeJeux: TextView
-         var tentative: TextView
          var resultat: TextView
 
         init {
-            motJouer = itemView.findViewById(R.id.txt_motJouer)
-            difficulte = itemView.findViewById(R.id.txt_difficulte)
-            tempsDeJeux = itemView.findViewById(R.id.txt_tempsDeJeux)
-            tentative = itemView.findViewById(R.id.txt_tentative)
-            resultat = itemView.findViewById(R.id.txt_resultat)
+             motJouer = itemView.findViewById(R.id.txt_motJouer)
+             difficulte = itemView.findViewById(R.id.txt_difficulte)
+             tempsDeJeux = itemView.findViewById(R.id.txt_tempsDeJeux)
+             resultat = itemView.findViewById(R.id.txt_resultat)
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HistoriqueContent {
-        TODO("Not yet implemented")
+        val itemView : View  = LayoutInflater.from(parent.context).inflate(R.layout.activity_historique_item, parent, false)
+        return HistoriqueContent(itemView)
     }
 
     override fun getItemCount(): Int {
@@ -38,8 +35,10 @@ class HistoriqueAdapter(
     }
 
     override fun onBindViewHolder(holder: HistoriqueContent, position: Int) {
-        TODO("Not yet implemented")
+        val historique = data[position]
+        holder.motJouer.text = historique.motJouer
+        holder.difficulte.text = historique.difficulte
+        holder.tempsDeJeux.text = historique.tempsDeJeu
+        holder.resultat.text = historique.resultatParti
     }
-
-
 }

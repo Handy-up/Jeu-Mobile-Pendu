@@ -2,34 +2,31 @@ package com.handy.projetfinalenativelependu
 
 import kotlin.random.Random
 
-class Jeu ( private val jeu : Array<String>) {
-    private var pointage : Int = 0
-    private var nbErreur : Int = 0
-    public var motÀDeviner : String = ""
-
+class Jeu(private val jeu: Array<String>) {
+    private var pointage: Int = 0
+    private var nbErreur: Int = 0
+    lateinit var motÀDeviner: String
+        private set
 
     init {
-
-        if (jeu.isEmpty()){
-            throw IllegalArgumentException("La liste de mot est vide, veuillez la remplir pour jouer")
+        if (jeu.isEmpty()) {
+            throw IllegalArgumentException("La liste de mots est vide, veuillez la remplir pour jouer")
         }
         motÀDeviner = jeu[Random.nextInt(jeu.size)]
     }
 
-
-    fun getPointage():Int{
+    fun getPointage(): Int {
         return pointage
     }
-    fun getNbErreur():Int{
+
+    fun getNbErreur(): Int {
         return nbErreur
     }
 
-
     fun essayerUneLettre(lettre: Char): ArrayList<Int> {
         val indices = ArrayList<Int>()
-        var motVerifier = this.motÀDeviner
-        motVerifier.forEachIndexed { index, char ->
-            if (char == lettre ) {
+        motÀDeviner.forEachIndexed { index, char ->
+            if (char.equals(lettre, ignoreCase = true)) {
                 indices.add(index)
             }
         }
@@ -38,24 +35,10 @@ class Jeu ( private val jeu : Array<String>) {
         } else {
             pointage += indices.size
         }
-
-        // Supprimer le caractère de motVerifier
-        val indicesToRemove = indices.reversed() // On inverse les indices pour éviter les décalages lors de la suppression
-        indicesToRemove.forEach { index ->
-            motVerifier = motVerifier.removeRange(index, index + 1)
-        }
-
         return indices
     }
 
-    fun estReussie() : Boolean{
-        return motÀDeviner.count() == pointage
+    fun estReussie(): Boolean {
+        return motÀDeviner.length == pointage
     }
-
-
-
 }
-
-
-
-

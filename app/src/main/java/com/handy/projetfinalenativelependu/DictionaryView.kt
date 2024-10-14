@@ -102,7 +102,8 @@ class DictionaryView : AppCompatActivity() {
 
 
     fun backSettings(){
-        finish()
+        val intent = Intent(this, SettingsView::class.java)
+        startActivity(intent)
     }
 
 

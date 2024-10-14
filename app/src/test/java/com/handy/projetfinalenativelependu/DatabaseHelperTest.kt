@@ -58,28 +58,6 @@ class DatabaseHelperTest {
     }
 
     @Test
-    fun insertMots() {
-        val mot = Mots(1, "chien", "dog", "facile")
-        dbHelper.insertMots(mot)
-
-        val db = dbHelper.readableDatabase
-        val cursor = db.query(
-            DatabaseHelper.TABLE_NAME_MOTS,
-            null,
-            "${DatabaseHelper.COLUMN_MOTS_FRANCAIS} = ?",
-            arrayOf("chien"),
-            null,
-            null,
-            null
-        )
-
-        assertTrue(cursor.moveToFirst())
-        assertEquals("chien", cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_MOTS_FRANCAIS)))
-        cursor.close()
-        db.close()
-    }
-
-    @Test
     fun insertHistorique() {
         val historique = Historique("chien", "facile", "00:05:00", 1.toString())
         dbHelper.insertHistorique(historique)

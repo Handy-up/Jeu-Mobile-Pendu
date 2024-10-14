@@ -41,7 +41,7 @@ class Accueil : AppCompatActivity() {
 
     // OnClick Game Navigation
     fun quiteGame(view: android.view.View){
-        finish()
+        finishAffinity()
     }
 
     fun startGame(view: android.view.View){

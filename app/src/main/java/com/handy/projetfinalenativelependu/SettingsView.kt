@@ -68,18 +68,14 @@ class SettingsView : AppCompatActivity() {
         }
 
         preferences = Preferences(difficulte,langue)
-        savePreferences(preferences)
+
+        PreferencesManager.savePreferences(this,preferences)
+
+        val newPref = PreferencesManager.loadPreferences(this)
 
 
-        Toast.makeText(this, "Langue : ${preferences.languePreferences} Et Dificulté : ${preferences.difficultePreferences} Enregistré!", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Langue : ${newPref.languePreferences} Et Dificulté : ${newPref.difficultePreferences} Enregistré!", Toast.LENGTH_SHORT).show()
     }
 
-    private fun savePreferences(preferences: Preferences) {
-        val sharedPref: SharedPreferences = getSharedPreferences("appPreferences", Context.MODE_PRIVATE)
-        with(sharedPref.edit()) {
-            putString("languePreferences", preferences.languePreferences)
-            putString("difficultePreferences", preferences.difficultePreferences)
-            apply()
-        }
-    }
+
 }

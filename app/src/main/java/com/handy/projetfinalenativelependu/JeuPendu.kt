@@ -25,6 +25,7 @@ class JeuPendu : AppCompatActivity() {
     private val handler = Handler(Looper.getMainLooper())
     private val updateInterval: Long = 1000L
     private val gameTimer = GameTimer()
+    lateinit var preferencesSauvegarder: Preferences
     private val updateTask = object : Runnable {
         override fun run() {
             timer.text = gameTimer.getFormattedTime()
@@ -57,9 +58,22 @@ class JeuPendu : AppCompatActivity() {
         dbLocal = DatabaseHelper(this)
         listMots = dbLocal.afficherMotsForGame()
 
+        // Récupérer les préférences sauvegardées
+        preferencesSauvegarder = PreferencesManager.loadPreferences(this)
+
         // Remplissage de gameMots avec les mots français de listMots
+
+
         for (mot in listMots) {
-            gameMots.add(mot.motFrancais)
+            when (preferencesSauvegarder.languePreferences) {
+                "Francais" -> {
+                    gameMots.add(mot.motFrancais)
+                }
+                "Anglais" -> {
+                    gameMots.add(mot.motAnglais)
+                }
+            }
+            //gameMots.add(mot.motFrancais)
         }
 
         // Initialisation du jeu
@@ -381,5 +395,10 @@ class JeuPendu : AppCompatActivity() {
             b.setBackgroundColor(R.color.black.dec())
             jouer('Z')
         }
+    }
+
+    fun quiteCurrentGeme(view: android.view.View){
+        val intent = Intent(this, Accueil::class.java)
+        startActivity(intent)
     }
 }

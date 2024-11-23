@@ -157,13 +157,3 @@ Ce projet est sous licence MIT – voir le fichier LICENSE pour plus de détails
 
 ![](https://github.com/Handy-up/Jeu-Mobile-Pendu/blob/versionFinal/app/src/main/res/drawable/pic1.png?raw=true)
 
----
-
-## Remerciements
-
-- Merci à **Figma** pour l’outil de design.
-- Merci à la communauté **Kotlin** pour ses ressources et son support.
-
----
-
-Si tu as des commentaires ou des améliorations, n'hésite pas à me les demander ! 😊
